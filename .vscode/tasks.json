@@ -1,0 +1,46 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "./gradlew clean",
+            "problemMatcher": []
+        },
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "./gradlew compileJava",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "test",
+            "type": "shell",
+            "command": "./gradlew test",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "start",
+            "type": "shell",
+            "command": "./gradlew run -t",
+            "problemMatcher": []
+        },
+        {
+            "label": "package",
+            "type": "shell",
+            "command": "./gradlew shadowJar",
+            "dependsOn": "clean",
+            "problemMatcher": []
+        }
+    ]
+}

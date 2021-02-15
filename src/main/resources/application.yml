@@ -1,0 +1,18 @@
+micronaut:
+  application:
+    name: kurush
+  security:
+    enabled: false
+    authentication: session
+datasources:
+  default:
+    url: jdbc:postgresql://localhost:5432/kurush
+    driverClassName: org.postgresql.Driver
+    username: postgres
+    password: '0000'
+    schema-generate: NONE
+    dialect: POSTGRES
+flyway:
+  datasources: 
+    default: 
+      enabled: true
