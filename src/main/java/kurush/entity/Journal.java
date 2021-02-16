@@ -1,11 +1,11 @@
 package kurush.entity;
 
-import java.util.UUID;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 import io.micronaut.data.annotation.AutoPopulated;
 import io.micronaut.data.annotation.Id;
 import io.micronaut.data.annotation.MappedEntity;
+import java.util.UUID;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 @MappedEntity
 public class Journal

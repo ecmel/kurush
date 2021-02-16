@@ -1,6 +1,7 @@
 plugins {
     id("com.github.johnrengelman.shadow") version "6.1.0"
     id("io.micronaut.application") version "1.3.4"
+    id("com.diffplug.spotless") version "5.10.1"
 }
 
 version = "0.1"
@@ -17,6 +18,14 @@ micronaut {
     processing {
         incremental(true)
         annotations("kurush.*")
+    }
+}
+
+spotless {
+    java {
+        importOrder()
+        removeUnusedImports()
+        eclipse().configFile("eclipse-prefs.xml") 
     }
 }
 
