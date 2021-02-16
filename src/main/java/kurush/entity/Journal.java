@@ -10,36 +10,36 @@ import javax.validation.constraints.Size;
 @MappedEntity
 public class Journal
 {
-   private UUID id;
-   private String name;
+    private UUID id;
+    private String name;
 
-   @Id
-   @AutoPopulated
-   public UUID getId()
-   {
-      return id;
-   }
+    @Id
+    @AutoPopulated
+    public UUID getId()
+    {
+        return id;
+    }
 
-   public void setId(UUID id)
-   {
-      this.id = id;
-   }
+    public void setId(UUID id)
+    {
+        this.id = id;
+    }
 
-   @NotNull
-   @Size(min = 1, max = 255)
-   public String getName()
-   {
-      return name;
-   }
+    @NotNull
+    @Size(min = 1, max = 255)
+    public String getName()
+    {
+        return name;
+    }
 
-   public void setName(String name)
-   {
-      this.name = name;
-   }
+    public void setName(String name)
+    {
+        this.name = name;
+    }
 
-   @Override
-   public String toString()
-   {
-      return "Journal [id=" + id + ", name=" + name + "]";
-   }
+    @Override
+    public String toString()
+    {
+        return "Journal [id=" + id + ", name=" + name + "]";
+    }
 }

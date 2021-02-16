@@ -12,12 +12,12 @@ import kurush.entity.Entry;
 @JdbcRepository(dialect = Dialect.POSTGRES)
 public interface EntryRepository extends PageableRepository<Entry, UUID>
 {
-   @Join("transfer")
-   @Join("account")
-   @Override
-   Iterable<Entry> findAll(Sort sort);
+    @Join("transfer")
+    @Join("account")
+    @Override
+    Iterable<Entry> findAll(Sort sort);
 
-   @Join("transfer")
-   @Join("account")
-   Iterable<Entry> findByAccount(Account account, Sort sort);
+    @Join("transfer")
+    @Join("account")
+    Iterable<Entry> findByAccount(Account account, Sort sort);
 }

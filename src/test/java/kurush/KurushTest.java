@@ -10,12 +10,12 @@ import org.junit.jupiter.api.Test;
 @MicronautTest
 class KurushTest
 {
-   @Inject
-   EmbeddedApplication<?> application;
+    @Inject
+    EmbeddedApplication<?> application;
 
-   @Test
-   void testItWorks()
-   {
-      assertTrue(application.isRunning());
-   }
+    @Test
+    void testItWorks()
+    {
+        assertTrue(application.isRunning());
+    }
 }

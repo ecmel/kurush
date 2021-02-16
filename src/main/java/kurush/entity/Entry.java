@@ -12,86 +12,86 @@ import javax.validation.constraints.NotNull;
 @MappedEntity
 public class Entry
 {
-   private UUID id;
-   private Transfer transfer;
-   private Account account;
-   private BigDecimal amount;
-   private BigDecimal debit;
-   private BigDecimal credit;
+    private UUID id;
+    private Transfer transfer;
+    private Account account;
+    private BigDecimal amount;
+    private BigDecimal debit;
+    private BigDecimal credit;
 
-   @Id
-   @AutoPopulated
-   public UUID getId()
-   {
-      return id;
-   }
+    @Id
+    @AutoPopulated
+    public UUID getId()
+    {
+        return id;
+    }
 
-   public void setId(UUID id)
-   {
-      this.id = id;
-   }
+    public void setId(UUID id)
+    {
+        this.id = id;
+    }
 
-   @NotNull
-   @Relation(value = Kind.MANY_TO_ONE, mappedBy = "transfer")
-   public Transfer getTransfer()
-   {
-      return transfer;
-   }
+    @NotNull
+    @Relation(value = Kind.MANY_TO_ONE, mappedBy = "transfer")
+    public Transfer getTransfer()
+    {
+        return transfer;
+    }
 
-   public void setTransfer(Transfer transfer)
-   {
-      this.transfer = transfer;
-   }
+    public void setTransfer(Transfer transfer)
+    {
+        this.transfer = transfer;
+    }
 
-   @NotNull
-   @Relation(value = Kind.MANY_TO_ONE, mappedBy = "account")
-   public Account getAccount()
-   {
-      return account;
-   }
+    @NotNull
+    @Relation(value = Kind.MANY_TO_ONE, mappedBy = "account")
+    public Account getAccount()
+    {
+        return account;
+    }
 
-   public void setAccount(Account account)
-   {
-      this.account = account;
-   }
+    public void setAccount(Account account)
+    {
+        this.account = account;
+    }
 
-   @NotNull
-   public BigDecimal getAmount()
-   {
-      return amount;
-   }
+    @NotNull
+    public BigDecimal getAmount()
+    {
+        return amount;
+    }
 
-   public void setAmount(BigDecimal amount)
-   {
-      this.amount = amount;
-   }
+    public void setAmount(BigDecimal amount)
+    {
+        this.amount = amount;
+    }
 
-   @NotNull
-   public BigDecimal getDebit()
-   {
-      return debit;
-   }
+    @NotNull
+    public BigDecimal getDebit()
+    {
+        return debit;
+    }
 
-   public void setDebit(BigDecimal debit)
-   {
-      this.debit = debit;
-   }
+    public void setDebit(BigDecimal debit)
+    {
+        this.debit = debit;
+    }
 
-   @NotNull
-   public BigDecimal getCredit()
-   {
-      return credit;
-   }
+    @NotNull
+    public BigDecimal getCredit()
+    {
+        return credit;
+    }
 
-   public void setCredit(BigDecimal credit)
-   {
-      this.credit = credit;
-   }
+    public void setCredit(BigDecimal credit)
+    {
+        this.credit = credit;
+    }
 
-   @Override
-   public String toString()
-   {
-      return "Entry [account=" + account + ", credit=" + credit + ", debit=" + debit + ", id=" + id + ", transfer="
-         + transfer + "]";
-   }
+    @Override
+    public String toString()
+    {
+        return "Entry [account=" + account + ", credit=" + credit + ", debit=" + debit + ", id=" + id + ", transfer="
+            + transfer + "]";
+    }
 }
