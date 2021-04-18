@@ -52,6 +52,7 @@ dependencies {
 	testImplementation("org.testcontainers:testcontainers")
 	testImplementation("org.testcontainers:junit-jupiter")
 	testImplementation("org.testcontainers:postgresql")
+	testImplementation("net.java.dev.jna:jna:5.7.0")
 }
 
 application {
