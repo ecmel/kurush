@@ -22,10 +22,10 @@ micronaut {
 }
 
 eclipse {
-    classpath {
-        downloadJavadoc = true
-        downloadSources = true
-    }
+	classpath {
+		downloadJavadoc = true
+		downloadSources = true
+	}
 }
 
 spotless {
