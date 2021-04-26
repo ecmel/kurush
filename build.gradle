@@ -2,6 +2,7 @@ plugins {
 	id("com.github.johnrengelman.shadow") version "6.1.0"
 	id("io.micronaut.application") version "1.4.2"
 	id("com.diffplug.spotless") version "5.10.1"
+	id("idea")
 }
 
 version = "0.1"
@@ -30,6 +31,13 @@ spotless {
 	groovyGradle {
 		target "*.gradle"
 		greclipse()
+	}
+}
+
+idea {
+	module {
+		downloadJavadoc = true
+		downloadSources = true
 	}
 }
 
