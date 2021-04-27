@@ -21,13 +21,6 @@ micronaut {
 	}
 }
 
-eclipse {
-	classpath {
-		downloadJavadoc = true
-		downloadSources = true
-	}
-}
-
 spotless {
 	java {
 		importOrder()
