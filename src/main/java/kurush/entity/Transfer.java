@@ -29,7 +29,7 @@ public class Transfer
     }
 
     @NotNull
-    @Relation(value = Kind.MANY_TO_ONE, mappedBy = "journal")
+    @Relation(value = Kind.MANY_TO_ONE)
     public Journal getJournal()
     {
         return journal;

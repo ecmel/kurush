@@ -32,7 +32,7 @@ public class Entry
     }
 
     @NotNull
-    @Relation(value = Kind.MANY_TO_ONE, mappedBy = "transfer")
+    @Relation(value = Kind.MANY_TO_ONE)
     public Transfer getTransfer()
     {
         return transfer;
@@ -44,7 +44,7 @@ public class Entry
     }
 
     @NotNull
-    @Relation(value = Kind.MANY_TO_ONE, mappedBy = "account")
+    @Relation(value = Kind.MANY_TO_ONE)
     public Account getAccount()
     {
         return account;
