@@ -49,10 +49,9 @@ dependencies {
 	implementation("io.micronaut.views:micronaut-views-pebble")
 	runtimeOnly("ch.qos.logback:logback-classic")
 	runtimeOnly("org.postgresql:postgresql")
-	testImplementation("org.testcontainers:testcontainers")
+	testImplementation("org.testcontainers:testcontainers:1.15.3")
 	testImplementation("org.testcontainers:junit-jupiter")
 	testImplementation("org.testcontainers:postgresql")
-	testImplementation("net.java.dev.jna:jna:5.8.0")
 }
 
 application {
