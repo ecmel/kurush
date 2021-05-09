@@ -9,7 +9,6 @@ group = "kurush"
 
 repositories {
 	mavenCentral()
-	jcenter()
 }
 
 micronaut {
