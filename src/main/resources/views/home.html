@@ -9,7 +9,7 @@
 
 {% block script %}
 <script>
-    ready(function () {
+    ready(() => {
         fetch("/not-found", {
             headers: { "Accept": "application/json" },
             credentials: "same-origin"
